@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/constraintLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/center"
+        android:text="中"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintBottom_toTopOf="@+id/center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左"
+        app:layout_constraintEnd_toStartOf="@id/center"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右"
+        app:layout_constraintStart_toEndOf="@id/center"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东北"
+        app:layout_constraintStart_toEndOf="@id/center"
+        app:layout_constraintBottom_toTopOf="@id/center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东南"
+        app:layout_constraintStart_toEndOf="@id/center"
+        app:layout_constraintTop_toBottomOf="@id/center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bias"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintVertical_bias="0.25"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="西北"
+        app:layout_constraintBottom_toTopOf="@+id/center"
+        app:layout_constraintEnd_toStartOf="@id/center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="西南"
+        app:layout_constraintTop_toBottomOf="@id/center"
+        app:layout_constraintEnd_toStartOf="@id/center"/>
+
+</android.support.constraint.ConstraintLayout>
